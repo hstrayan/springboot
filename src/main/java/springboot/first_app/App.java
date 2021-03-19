@@ -16,10 +16,12 @@ public class App
 	
 	@Value("${messageGreeting}")
 private String message;
+	@Value("${moredata}")
+private String addlmessage;
 	
 	 @RequestMapping("/")
 	    String home() {
-	        return message;
+	        return message + "  " + addlmessage;
 	    }
 public static void main( String[] args )
 {
