@@ -14,7 +14,7 @@ public class App
 
 {     
 	
-	@Value("${message}")
+	@Value("${message.greeting}")
 private String message;
 	
 	 @RequestMapping("/")
